@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo src/main.js:build.js --live -- -t [babelify --presets [env] ]"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fireworks80/Novice-to-Nonja---html5-game.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "lite-server": "^2.6.1"
+  "bugs": {
+    "url": "https://github.com/fireworks80/Novice-to-Nonja---html5-game/issues"
+  },
+  "homepage": "https://github.com/fireworks80/Novice-to-Nonja---html5-game#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "budo": "^11.7.0"
   }
 }
